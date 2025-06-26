@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/assets/favicon.jpeg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/global.css" />
+  <title>{{ meta.title }}</title>
+</head>
+
+<body>
+  <div>
+    {% include "navbar.njk" %}
+    <div class="tasks-container">
+      <div class="text">
+        {{ content | safe }}
+      </div>
+      <div class="grid-tasks">
+        <div></div>
+        <div class="task-card box1">
+          <a href="/articles/rensei/teaching" class="link" style="color: hsla(0, 100%, 50%, 0.7);">
+            工事中……
+          </a>
+        </div>
+        <div class="task-card box2">
+          <a href="/articles/rensei/n1n2" class="link" style="color: hsla(0, 0%, 0%, 0.7);">
+            N1N2聽解讀解線上班
+          </a>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

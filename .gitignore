@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+
+# Eleventy build output (default "_site" or自訂的 output folder)
+_site/
+dist/
+src/Templates
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local environment variables
+.env
+.env.*.local
+
+# macOS
+.DS_Store
+
+# VSCode settings (可選)
+.vscode/
+
+# Others
+*.log
+*.tmp
+.cache/
+.obsidian

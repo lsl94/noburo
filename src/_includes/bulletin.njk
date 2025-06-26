@@ -1,0 +1,23 @@
+<div class="bulletin-container">
+  <!-- <img src='assets/images/profile.jpg' class="profile-img" alt="lsl's personal headshot" /> -->
+  <div class="master-text">
+    <p>
+      風湧萬言寄舞葉 <br>
+      靜聽野爐煮水聲 <br>
+      <small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;看爐人 李尙霖</small>
+    </p>
+  </div>
+  <div class="master-text">
+    <h3>最新文章</h3>
+    <ul class="article-list">
+      {% set recentArticles = collections.articles | reverse | head(10) %}
+      {% for article in recentArticles %}
+      <li>
+        <a href="{{ article.url }}">
+          {{ article.date | htmlDateString }} {{ article.data.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

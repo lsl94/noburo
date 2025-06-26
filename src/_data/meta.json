@@ -1,0 +1,25 @@
+{
+  "title": "言葉の野風爐",
+  "url": "https://lsl94.github.io/noburo/",
+  "lang": "zh-Hant",
+  "description": "",
+  "author": {
+    "name": "lsl",
+    "email": "treading94@gmail.com",
+    "url": ""
+  },
+  "config": {
+    "showDateList": true,
+    "showDatePost": true
+  },
+  "navTotal": [
+    {
+      "title": "稿東稿西",
+      "url": "/articles/drafts"
+    },
+    {
+      "title": "日語錬成",
+      "url": "/articles/rensei"
+    }
+  ]
+}
