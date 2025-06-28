@@ -383,7 +383,8 @@ hr {
 
 /* Tasks */
 .tasks-container {
-  padding: 6rem 0;
+  padding: 3rem 0;
+  padding-bottom: 0;
 }
 
 .tasks-container .text {
@@ -414,6 +415,9 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 0 1rem;
+  margin-right: 7%;
+  margin-left: 7%;
+  margin-bottom: 0;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -423,6 +427,10 @@ hr {
 
 .tasks-container .grid-tasks i {
   font-size: 1.5rem;
+}
+
+.tasks-container .grid-tasks .task-card a {
+  color: hsla(220, 6%, 12%, 0.9);
 }
 
 .tasks-container .grid-tasks .box1:hover {
@@ -609,12 +617,15 @@ hr {
   line-height: 1.8;
 }
 
-.article-listening-list {
-  display: flex;
-  flex-direction: column;
+.article-list li a {
+  display: inline-flex;
+  justify-content: start;
+  column-gap: 0.5em;
   align-items: start;
-  line-height: 0.7;
+  text-align: left;
+  text-decoration: none;
 }
+
 
 .article-page {
   display: flex;
@@ -623,10 +634,10 @@ hr {
   gap: 2rem;
 }
 
-.about {
+.ctx-box {
   margin-top: 2rem;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 8%;
+  margin-left: 8%;
   /* line-height: 2rem; */
   margin-bottom: 2rem;
 }
