@@ -57,10 +57,10 @@ p {
 
 .plyr_video-embed {
   position: relative;
-  padding-bottom: 28%;
+  padding-bottom: 36%;
   height: 0;
   overflow: hidden;
-  max-width: 49%;
+  max-width: 65%;
   margin-bottom: 2rem;
   border-radius: 8px;
 }
@@ -623,7 +623,6 @@ hr {
   column-gap: 0.5em;
   align-items: start;
   text-align: left;
-  text-decoration: none;
 }
 
 
