@@ -49,6 +49,7 @@ li {
 }
 
 p {
+  white-space: pre-wrap;
   font-family: "Noto Serif TC", "PMingLiU", "MingLiU", "SimSun", "Songti SC", serif;
   font-size: 0.75rem;
   font-weight: bold;
@@ -637,6 +638,5 @@ hr {
   margin-top: 2rem;
   margin-right: 8%;
   margin-left: 8%;
-  /* line-height: 2rem; */
   margin-bottom: 2rem;
 }
