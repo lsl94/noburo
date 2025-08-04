@@ -19,11 +19,15 @@ pagination:
   </ul>
   <div class="article-page">
     {% if pagination.href.previous %}
+	  <br>
       <a href="{{ pagination.href.previous | url }}">上一頁</a>
+      <br>
     {% endif %}
 
     {% if pagination.href.next %}
+     <br>
       <a href="{{ pagination.href.next | url }}">下一頁</a>
+      <br>
     {% endif %}
   </div>
 </div>
