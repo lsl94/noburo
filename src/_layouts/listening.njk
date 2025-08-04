@@ -1,86 +1,70 @@
 <!DOCTYPE html>
 <html lang="{{ meta.lang }}">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/assets/favicon.jpeg" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/css/global.css" />
-  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-  <style>
-    .news-box {
-      padding-left: 10%;
-      padding-right: 10%;
-      box-sizing: border-box;
-    }
-  </style>
-  <title>{{ meta.title }}</title>
-</head>
+{% include "head_plyr.njk" %}
 
 <body>
-  {% include "navbar.njk" %}
-  <div class="news-box">
+    {% include "navbar.njk" %}
+    <div class="ctx-box">
 
-    <h1>{{ title }}</h1>
-    <br>
+        <h1>{{ title }}</h1>
+        <br>
 
-    {% if youtube %}
-    {% set yt_id = youtube | replace("https://www.youtube.com/watch?v=", "") %}
-    <div class="plyr_video-embed">
-      <iframe src="https://www.youtube.com/embed/{{ yt_id }}?origin=localhost&iv_load_policy=3&modestbranding=1"
-        allowfullscreen allow="autoplay; encrypted-media">
-      </iframe>
+        {% if youtube %}
+        {% set yt_id = youtube | replace("https://www.youtube.com/watch?v=", "") %}
+        <div class="plyr_video-embed">
+            <iframe src="https://www.youtube.com/embed/{{ yt_id }}?origin=localhost&iv_load_policy=3&modestbranding=1"
+                allowfullscreen allow="autoplay; encrypted-media">
+            </iframe>
+        </div>
+        <details>
+            <summary>新聞內文</summary>
+            {% endif %}
+
+            {{ content | safe }}
+
+            {% if audio1 %}
+        </details>
+        <br>
+        <h3>問題一</h3>
+        <audio class="audio-player">
+            <source src="{{('/audio/' + audio1) | url }}" type="audio/mp3" />
+        </audio>
+        {% endif %}
+        <br>
+        {% if audio2 %}
+        <h3>問題二</h3>
+        <audio class="audio-player">
+            <source src="{{ ('/audio/' + audio2) | url }}" type="audio/mp3" />
+        </audio>
+        {% endif %}
+        <br>
+        {% if audio3 %}
+        <h3>問題三</h3>
+        <audio class="audio-player">
+            <source src="{{ ('/audio/' + audio3) | url }}" type="audio/mp3" />
+        </audio>
+        {% endif %}
+        <br>
+        <br>
+
     </div>
-    <br>
-    {% endif %}
-
-    {{ content | safe }}
-
-    {% if audio1 %}
-    <br>
-    <h2>問題一</h2>
-    <audio class="audio-player">
-      <source src="/audio/{{ audio1 }}" type="audio/mp3" />
-    </audio>
-    {% endif %}
-    <br>
-    {% if audio2 %}
-    <h2>問題二</h2>
-    <audio class="audio-player">
-      <source src="/audio/{{ audio2 }}" type="audio/mp3" />
-    </audio>
-    {% endif %}
-    <br>
-    {% if audio3 %}
-    <h2>問題三</h2>
-    <audio class="audio-player">
-      <source src="/audio/{{ audio3 }}" type="audio/mp3" />
-    </audio>
-    {% endif %}
-    <br>
-    <br>
-
-  </div>
-  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const players = Plyr.setup('.audio-player', {
-        controls: [
-          'play',
-          'progress',
-          'current-time',
-          'duration',
-          'mute',
-          'volume',
-          'settings',
-        ],
-      })
-    })
-  </script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const players = Plyr.setup('.audio-player', {
+                controls: [
+                    'play',
+                    'progress',
+                    'current-time',
+                    'duration',
+                    'mute',
+                    'volume',
+                    'settings',
+                ],
+            })
+        })
+    </script>
 </body>
 
 </html>

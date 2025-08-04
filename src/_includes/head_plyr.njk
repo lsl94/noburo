@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="{{ meta.lang }}">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,14 +7,6 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{{ '/css/global.css' | url }}" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     <title>{{ meta.title + "-" + title }}</title>
 </head>
-
-<body>
-    {% include "navbar.njk" %}
-    {% block content %}
-    {{ content | safe }}
-    {% endblock %}
-</body>
-
-</html>
