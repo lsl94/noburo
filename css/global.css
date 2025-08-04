@@ -55,15 +55,21 @@ p {
     font-weight: bold;
 }
 
+summary {
+    font-size: 1.17em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0.5em 0;
+}
 
 .plyr_video-embed {
+    aspect-ratio: 16 / 9;
     position: relative;
-    padding-bottom: 36%;
-    height: 0;
-    overflow: hidden;
-    max-width: 65%;
+    width: 65%;
+    max-width: 100%;
     margin-bottom: 2rem;
-    border-radius: 8px;
+    overflow: hidden;
+    border-radius: 16px;
 }
 
 .plyr_video-embed iframe {
@@ -91,13 +97,9 @@ p {
 
 @media screen and (max-width: 768px) {
     .plyr_video-embed {
-        position: relative;
-        padding-bottom: 36%;
-        height: 25%;
-        overflow: hidden;
-        max-width: 90%;
-        margin-bottom: 2rem;
-        border-radius: 8px;
+        width: 90%;
+        aspect-ratio: 16 / 9;
+        height: auto;
     }
 }
 
