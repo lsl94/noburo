@@ -7,7 +7,7 @@
     {% include "navbar.njk" %}
     <div class="ctx-box">
 
-        <h1>{{ title }}</h1>
+        <h2>{{ title }}</h2>
         <br>
 
         {% if youtube %}
@@ -18,7 +18,7 @@
             </iframe>
         </div>
         <details>
-            <summary>新聞內文</summary>
+            <summary class="news">新聞內文</summary>
             {% endif %}
 
             {{ content | safe }}
