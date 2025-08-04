@@ -88,6 +88,19 @@ p {
     color: #333;
 }
 
+
+@media screen and (max-width: 768px) {
+    .plyr_video-embed {
+        position: relative;
+        padding-bottom: 36%;
+        height: 0;
+        overflow: hidden;
+        max-width: 90%;
+        margin-bottom: 2rem;
+        border-radius: 8px;
+    }
+}
+
 /* Navbar */
 .nav-container {
     display: grid;
