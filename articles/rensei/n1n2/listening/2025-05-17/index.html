@@ -123,7 +123,7 @@ VTRの黒川さんと根津さんが望んでいるような、結婚後もそ�
     <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const players = Plyr.setup('.audio-player', {
+            Plyr.setup(".audio-player", {
                 controls: [
                     'play',
                     'progress',
@@ -133,6 +133,23 @@ VTRの黒川さんと根津さんが望んでいるような、結婚後もそ�
                     'volume',
                     'settings',
                 ],
+            })
+
+            Plyr.setup("plyr_video-embed", {
+                controls: [
+                    'play',
+                    'rewind',
+                    'fast-forward',
+                    'progress',
+                    'current-time',
+                    'duration',
+                    'mute',
+                    'volume',
+                    'settings',
+                    'pip',
+                    'airplay',
+                    'fullscreen'
+                ]
             })
         })
     </script>
