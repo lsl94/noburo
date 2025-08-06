@@ -10,7 +10,8 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/noburo/css/global.css" />
-    <title>野風爐-新聞聽解練習</title>
+    <script src="/noburo/js/change_input-data.js"></script>
+    <title>野風爐-學員鍊成紀錄</title>
 </head>
 
 <body>
@@ -37,33 +38,16 @@
     </div>
 </div>
 
-    
-    <div class="article-box">
-  <ul class="article-list">
-<p><li><br>
-<a href="/noburo/articles/rensei/n1n2/listening/2025-05-31/"><br>
-<i class="fas fa-link"></i> 2025-05-31 熊本ラーメン、存続の危機！<br>
-</a><br>
-</li></p>
-<p><li><br>
-<a href="/noburo/articles/rensei/n1n2/listening/2025-05-24/"><br>
-<i class="fas fa-link"></i> 2025-05-24 “和文化”で日本を知りたい<br>
-</a><br>
-</li></p>
-<p><li><br>
-<a href="/noburo/articles/rensei/n1n2/listening/2025-05-17/"><br>
-<i class="fas fa-link"></i> 2025-05-17 選択的夫婦別姓<br>
-</a><br>
-</li></p>
-  </ul>
-  <div class="article-page">
-<p><br><br>
-<a href="/noburo/articles/rensei/n1n2/listening/">上一頁</a><br>
-<br></p>
-  </div>
-</div>
+    <div class="search-box">
+        <div class="form-content">
+            <h2>堂數查詢</h2> <br>
+            <label>姓名：<input type="text" id="name"></label><br><br>
+            <label>Email or 查詢碼：<input type="text" id="query"></label><br><br>
+            <button onclick="queryStudent()"> &emsp;查詢&emsp;</button>
 
-    
+            <div id="stu-result" style="margin-top: 2em;"></div>
+        </div>
+    </div>
 </body>
 
 </html>

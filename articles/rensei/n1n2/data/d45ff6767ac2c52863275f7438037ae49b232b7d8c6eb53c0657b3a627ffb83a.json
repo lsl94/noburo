@@ -1,0 +1,13 @@
+{
+  "id": 3,
+  "payment_date": null,
+  "expiration_date": null,
+  "total_lessons": 12,
+  "attended_lessons": 3,
+  "remaining_lessons": 9,
+  "attendance_record": [
+    "2025-06-07",
+    "2025-06-26",
+    "2025-07-24"
+  ]
+}
