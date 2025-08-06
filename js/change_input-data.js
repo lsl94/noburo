@@ -52,7 +52,7 @@ async function queryStudent() {
         <tr><td>繳費日</td><td>${payment_date || "-"}</td></tr>
         <tr><td>到期日</td><td>${expiration_date || "-"}</td></tr>
         <tr><td>總堂數</td><td>${total_lessons || 0}</td></tr>
-        <tr><td>已上課堂數</td><td>${attended_lessons || 0}</td></tr>
+        <tr><td>已上堂數</td><td>${attended_lessons || 0}</td></tr>
         <tr><td>剩餘堂數</td><td>${remaining_lessons || 0}</td></tr>
       </table>
         <br>
