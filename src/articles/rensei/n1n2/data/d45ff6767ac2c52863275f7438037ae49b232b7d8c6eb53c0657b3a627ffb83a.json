@@ -1,0 +1,18 @@
+{
+  "id": 3,
+  "name": "陳湘君",
+  "alias": [],
+  "mail": null,
+  "query_data": "b11115096",
+  "audition": false,
+  "payment_date": null,
+  "expiration_date": null,
+  "total_lessons": 12,
+  "attended_lessons": 3,
+  "remaining_lessons": 9,
+  "attendance_record": [
+    "2025-06-07",
+    "2025-06-26",
+    "2025-07-24"
+  ]
+}

@@ -656,3 +656,8 @@ hr {
     margin-left: 8%;
     margin-bottom: 2rem;
 }
+
+/* search */
+#stu-result {
+    margin-top: 2rem;
+}

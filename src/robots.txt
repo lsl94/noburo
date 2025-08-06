@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /articles/rensei/n1n2/data/
+

@@ -1,0 +1,25 @@
+{
+  "id": 1,
+  "name": "許家蓁",
+  "alias": [],
+  "mail": "yunahsu1109@gmail.com",
+  "query_data": null,
+  "audition": false,
+  "payment_date": null,
+  "expiration_date": null,
+  "total_lessons": 12,
+  "attended_lessons": 10,
+  "remaining_lessons": 2,
+  "attendance_record": [
+    "2025-05-31",
+    "2025-06-07",
+    "2025-06-14",
+    "2025-06-21",
+    "2025-06-26",
+    "2025-07-03",
+    "2025-07-10",
+    "2025-07-17",
+    "2025-07-24",
+    "2025-07-31"
+  ]
+}

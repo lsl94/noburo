@@ -10,6 +10,7 @@ const pathPrefix = "/noburo/"
 export default function(eleventyConfig) {
     // 處理靜態資源：將 src/public/ 下的內容直接複製到 _site/ 根目錄
     eleventyConfig.addPassthroughCopy({ "src/public": "/" })
+    eleventyConfig.addPassthroughCopy("src/articles/rensei/n1n2/data")
     eleventyConfig.ignores.add("src/templates")
 
     // List all posts
