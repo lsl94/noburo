@@ -3,8 +3,8 @@
   "payment_date": null,
   "expiration_date": null,
   "total_lessons": 12,
-  "attended_lessons": 10,
-  "remaining_lessons": 2,
+  "attended_lessons": 11,
+  "remaining_lessons": 1,
   "attendance_record": [
     "2025-05-31",
     "2025-06-07",
@@ -15,6 +15,7 @@
     "2025-07-10",
     "2025-07-17",
     "2025-07-24",
-    "2025-07-31"
+    "2025-07-31",
+    "2025-08-07"
   ]
 }
