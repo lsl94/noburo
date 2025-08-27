@@ -17,7 +17,7 @@ async function sha256(text) {
 // 主查詢邏輯
 async function queryStudent() {
     const name = document.getElementById("name").value.trim()
-    const queryInput = document.getElementById("query").value.trim()
+    const queryInput = document.getElementById("query").value.trim().toLowerCase()
     const resultDiv = document.getElementById("stu-result")
     resultDiv.innerHTML = ""
 
@@ -49,25 +49,40 @@ async function queryStudent() {
         let html = `
       <h3>堂數資訊</h3>
       <table>
-        <tr><td>姓名</td><td>${name}</td></tr>
         <tr><td>繳費日</td><td>${payment_date || "-"}</td></tr>
         <tr><td>到期日</td><td>${expiration_date || "-"}</td></tr>
         <tr><td>總堂數</td><td>${total_lessons || 0}</td></tr>
-        <tr><td>已上課堂數</td><td>${attended_lessons || 0}</td></tr>
+        <tr><td>已上堂數</td><td>${attended_lessons || 0}</td></tr>
         <tr><td>剩餘堂數</td><td>${remaining_lessons || 0}</td></tr>
       </table>
-    `
+        <br>
+`
+        const lessonNames = {
+            1: "第一堂",
+            2: "第二堂",
+            3: "第三堂",
+            4: "第四堂",
+            5: "第五堂",
+            6: "第六堂",
+            7: "第七堂",
+            8: "第八堂",
+            9: "第九堂",
+            10: "第十堂",
+            11: "第十一堂",
+            12: "第十二堂"
+        }
 
-        // 產生 12 格橫向的出席表格
-        html += `<h3>出席紀錄</h3><table border="1"><tr>`
+        // 生成直列的出席紀錄表格
+        html += `<h3>出席紀錄</h3><table>`
         for (let i = 1; i <= 12; i++) {
-            html += `<th>${i}</th>`
+            html += `
+            <tr>
+                <th>${lessonNames[i]}</th>
+                <td>${attendance_record[i - 1] || ""}</td>
+            </tr>
+        `
         }
-        html += `</tr><tr>`
-        for (let i = 0; i < 12; i++) {
-            html += `<td>${attendance_record[i] || ""}</td>`
-        }
-        html += `</tr></table>`
+        html += `</table>`
 
         resultDiv.innerHTML = html
     } catch (err) {

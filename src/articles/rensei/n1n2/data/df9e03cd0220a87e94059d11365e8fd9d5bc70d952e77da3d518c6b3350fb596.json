@@ -1,12 +1,5 @@
 {
   "id": 2,
-  "name": "李雅惠",
-  "alias": [
-    "邱顯鈞"
-  ],
-  "mail": "missoni1216@gmail.com",
-  "query_data": null,
-  "audition": false,
   "payment_date": null,
   "expiration_date": null,
   "total_lessons": 12,
