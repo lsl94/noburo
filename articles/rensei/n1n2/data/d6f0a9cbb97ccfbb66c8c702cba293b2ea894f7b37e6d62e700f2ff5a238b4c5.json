@@ -1,0 +1,12 @@
+{
+  "id": 5,
+  "quarterly_payment": false,
+  "payment_date": "2025-07-15",
+  "expiration_date": "2026-07-15",
+  "total_lessons": 4,
+  "attended_lessons": 1,
+  "remaining_lessons": 3,
+  "attendance_record": [
+    "2025-08-29"
+  ]
+}

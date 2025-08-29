@@ -74,7 +74,7 @@ async function queryStudent() {
 
         // 生成直列的出席紀錄表格
         html += `<h3>出席紀錄</h3><table>`
-        for (let i = 1; i <= 12; i++) {
+        for (let i = 1; i <= total_lessons; i++) {
             html += `
             <tr>
                 <th>${lessonNames[i]}</th>

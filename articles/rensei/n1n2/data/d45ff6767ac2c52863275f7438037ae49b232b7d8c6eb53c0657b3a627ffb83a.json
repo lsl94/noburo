@@ -1,5 +1,6 @@
 {
   "id": 3,
+  "quarterly_payment": true,
   "payment_date": null,
   "expiration_date": null,
   "total_lessons": 12,

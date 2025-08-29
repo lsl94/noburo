@@ -1,5 +1,6 @@
 {
   "id": 4,
+  "quarterly_payment": true,
   "payment_date": "2025-07-15",
   "expiration_date": "2026-07-15",
   "total_lessons": 12,
