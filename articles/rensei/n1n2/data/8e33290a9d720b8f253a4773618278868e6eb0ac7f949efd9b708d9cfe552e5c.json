@@ -4,8 +4,8 @@
   "payment_date": "2025-08-15",
   "expiration_date": "2026-08-15",
   "total_lessons": 12,
-  "attended_lessons": 9,
-  "remaining_lessons": 3,
+  "attended_lessons": 10,
+  "remaining_lessons": 2,
   "attendance_record": [
     "2025-08-21",
     "2025-08-28",
@@ -15,6 +15,7 @@
     "2025-09-25",
     "2025-10-02",
     "2025-10-09",
-    "2025-10-16"
+    "2025-10-16",
+    "2025-10-23"
   ]
 }
