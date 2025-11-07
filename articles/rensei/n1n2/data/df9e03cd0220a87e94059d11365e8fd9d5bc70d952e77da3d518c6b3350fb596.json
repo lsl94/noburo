@@ -1,5 +1,6 @@
 {
   "id": 2,
+  "non_renewal": false,
   "quarterly_payment": true,
   "payment_date": null,
   "expiration_date": null,

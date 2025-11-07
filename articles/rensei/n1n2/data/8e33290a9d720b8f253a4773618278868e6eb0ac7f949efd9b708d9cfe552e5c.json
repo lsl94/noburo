@@ -1,11 +1,12 @@
 {
   "id": 1,
+  "non_renewal": false,
   "quarterly_payment": true,
-  "payment_date": "2025-08-15",
-  "expiration_date": "2026-08-15",
+  "payment_date": "2025-11-07",
+  "expiration_date": "2026-11-07",
   "total_lessons": 12,
-  "attended_lessons": 11,
-  "remaining_lessons": 1,
+  "attended_lessons": 12,
+  "remaining_lessons": 0,
   "attendance_record": [
     "2025-08-21",
     "2025-08-28",
@@ -17,6 +18,7 @@
     "2025-10-09",
     "2025-10-16",
     "2025-10-23",
-    "2025-10-30"
+    "2025-10-30",
+    "2025-11-06"
   ]
 }
