@@ -20,6 +20,14 @@ body {
     margin: 0 auto;
     padding: 0 0;
     width: 100vw;
+    /* Chrome, Safari */
+    -webkit-user-select: none;
+    /* Firefox */
+    -moz-user-select: none;
+    /* IE 10+ */
+    -ms-user-select: none;
+    /* Standard */
+    user-select: none;
 }
 
 @media screen and (max-width: 768px) {
