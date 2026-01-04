@@ -10,6 +10,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/noburo/css/global.css" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     <title>野風爐-日語鍊成</title>
     <script src="/noburo/js/disable_copy.js" defer></script>
 </head>
@@ -83,7 +84,11 @@
 <li>★使用Google Meet</li>
 <li> ※會議室連結上課前一天寄發</li>
 <li>★扣堂制（上多少、扣多少。）</li>
-<li> ※堂數有效期限：購買日起一年內　<br>
+<li> ※堂數有效期限：購買日起一年內</li>
+<li>★示範教學（非上課實況）<br>
+<video class="plyr" controls><br>
+<source src="/noburo/video/trial_teaching.mp4" type="video/mp4" /><br>
+</video><br>
 <br></li>
 </ul>
 <h3 id="-4" tabindex="-1">預購堂數方案</h3>
@@ -107,6 +112,28 @@
 <img src="/noburo/images/line_community.png" alt="QR Code" style="width: 150px; height: auto;">
 
     </div>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            Plyr.setup("plyr", {
+                controls: [
+                    'play',
+                    'rewind',
+                    'fast-forward',
+                    'progress',
+                    'current-time',
+                    'duration',
+                    'mute',
+                    'volume',
+                    'settings',
+                    'pip',
+                    'airplay',
+                    'fullscreen'
+                ]
+            })
+        })
+    </script>
+
 </body>
 
 </html>
