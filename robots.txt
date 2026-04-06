@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /articles/rensei/jp_course/data/
+Disallow: /articles/rensei/jp_course/dokkai/
 Disallow: /audio/
