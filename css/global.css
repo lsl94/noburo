@@ -748,22 +748,33 @@ td {
     font-size: 0.7rem !important;
 }
 
-/* 1. Pagefind 全域顏色變數 */
+/* 1. Pagefind 全域顏色變數 (黑底優化) */
 :root {
     --pagefind-ui-primary: #58a6ff;
+    /* 連結藍色 */
     --pagefind-ui-text: #ffffff;
-    /* 輸入後的文字維持純白 */
+    /* 純白文字 */
     --pagefind-ui-subtext: #a1a1a1;
-    /* 預設字與次要文字改回灰色 */
+    /* 摘要灰色 */
     --pagefind-ui-background: #1C1C1C;
+    /* 搜尋框淺黑色底 */
     --pagefind-ui-border: #30363d;
+    /* 深灰色邊框 */
 }
 
-/* 2. 搜尋輸入框文字樣式 */
+/* 2. 外框寬度與向左靠齊設定 */
+.pagefind-ui {
+    width: 300px !important;
+    margin-left: 10% !important;
+    /* 與 .article-box 左邊距對齊 */
+    margin-right: auto !important;
+    line-height: 1;
+}
+
+/* 3. 搜尋輸入框本體樣式 (高度縮減與顏色) */
 .pagefind-ui .pagefind-ui__search-input {
     background-color: #1C1C1C !important;
     color: #ffffff !important;
-    /* 輸入後的實際文字顏色 */
     height: 1.15rem !important;
     line-height: 1.15rem !important;
     font-size: 0.75rem !important;
@@ -773,50 +784,69 @@ td {
     box-sizing: border-box !important;
 }
 
-/* 3. 專門針對 "Search" 預設字 (Placeholder) 調灰 */
+/* 4. 針對 "Search" 預設字 (Placeholder) 調成穩重的灰色 */
 .pagefind-ui .pagefind-ui__search-input::placeholder {
     color: #888888 !important;
-    /* 使用中等灰色，比背景亮但比文字暗 */
     opacity: 1 !important;
-    /* 確保顏色精準顯示，不被透明度干擾 */
 }
 
-/* 4. 外框寬度與向左靠齊 (10% 邊距) */
-.pagefind-ui {
-    width: 300px !important;
-    margin-left: 10% !important;
-    margin-right: auto !important;
-    line-height: 1;
+/* 5. 縮短搜尋框與第一筆結果之間的間距 */
+.pagefind-ui .pagefind-ui__drawer {
+    padding: 0 !important;
+    margin-top: 0.25rem !important;
+    /* 縮小與輸入框的距離 */
 }
 
-/* 5. 搜尋結果摘要 */
+.pagefind-ui .pagefind-ui__results {
+    margin-top: 0 !important;
+}
+
+/* 6. 調整「找到筆數」訊息的間距，避免撐開高度 */
+.pagefind-ui .pagefind-ui__message {
+    margin-top: 0 !important;
+    padding: 0.25rem 0 !important;
+    font-size: 0.75rem !important;
+    min-height: 0 !important;
+    color: #a1a1a1 !important;
+}
+
+/* 7. 搜尋結果摘要 (Excerpt) */
 .pagefind-ui .pagefind-ui__result-excerpt {
     color: #a1a1a1 !important;
-    /* 摘要文字也同步使用灰色 */
     line-height: 1.5 !important;
+    padding: 0 !important;
 }
 
-/* 6. 搜尋結果標題 */
+/* 8. 搜尋結果標題 (Link) */
 .pagefind-ui .pagefind-ui__result-link {
     color: #58a6ff !important;
     font-weight: 600 !important;
 }
 
-/* 7. 關鍵字高亮 */
+/* 9. 關鍵字高亮樣式 */
 .pagefind-ui .pagefind-ui__result-mark {
     background-color: #382e1e !important;
     color: #ffdf5d !important;
+    padding: 2px 4px !important;
+    border-radius: 2px !important;
 }
 
-/* 8. 清除按鈕 */
+/* 10. 清除按鈕 (叉叉) 高度同步 */
 .pagefind-ui .pagefind-ui__search-clear {
     color: #ffffff !important;
     background-color: #30363d !important;
     height: 1.15rem !important;
+    line-height: 1.15rem !important;
+    padding: 0 0.5rem !important;
+    font-size: 0.7rem !important;
 }
 
-/* 9. 容器內距消除 */
-.pagefind-ui .pagefind-ui__search,
-.pagefind-ui .pagefind-ui__drawer {
+/* 11. 消除內部容器多餘內距 */
+.pagefind-ui .pagefind-ui__search {
     padding: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.pagefind-ui .pagefind-ui__message {
+    display: none !important;
 }
