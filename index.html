@@ -10,6 +10,8 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/noburo/css/global.css" />
+    <link href="/noburo/pagefind/pagefind-ui.css" rel="stylesheet">
+    <script src="/noburo/pagefind/pagefind-ui.js"></script>
     <title>野風爐-首頁</title>
 </head>
 
@@ -19,7 +21,9 @@
         <a href="/noburo/">
             言葉の野風爐
         </a>
+
     </div>
+
     <div class="nav">
         <!-- <a href="serach" class="link"> -->
         <!--     <i class="fa-solid fa-magnifying-glass"></i> -->
@@ -38,12 +42,14 @@
     </div>
 </div>
 
+
     <div class="bulletin-container">
     <!-- <img src='assets/images/profile.jpg' class="profile-img" alt="lsl's personal headshot" /> -->
     <div class="master-text">
         風湧萬言寄舞葉 <br>
         靜聽野爐煮水聲 <br>
         <small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;看爐人 李尙霖</small>
+
     </div>
     <div class="master-text">
         <h3>最新文章</h3>
@@ -123,10 +129,36 @@
             </li>
             
         </ul>
+        <br>
+        <div class="search">
+            <div id="search"></div>
+        </div>
+
     </div>
+
+
 </div>
+
 
     <br>
 </body>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({
+            element: "#search",
+            showImages: false,
+            showSubResults: true, // 顯示頁面內的次級標題
+            translations: {
+                placeholder: "Search",
+                zero_results: "No results found",
+                search_label: "Search this site",
+                clear_search: "Clear",
+                load_more: "Load more results",
+                search_suggestion: "Try searching for:",
+                results_count: "[COUNT] results found"
+            }
+        })
+    })
+</script>
 
 </html>
