@@ -4,10 +4,11 @@
   "quarterly_payment": true,
   "payment_date": "2026-06-26",
   "expiration_date": "2026-06-26",
-  "total_lessons": 4,
-  "attended_lessons": 1,
-  "remaining_lessons": 3,
+  "total_lessons": 12,
+  "attended_lessons": 2,
+  "remaining_lessons": 10,
   "attendance_record": [
-    "2026-06-25"
+    "2026-06-25",
+    "2026-07-23"
   ]
 }
