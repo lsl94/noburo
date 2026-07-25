@@ -1,12 +1,12 @@
 {
-  "id": null,
+  "id": 5,
   "non_renewal": false,
-  "quarterly_payment": true,
+  "quarterly_payment": false,
   "payment_date": "2026-06-26",
   "expiration_date": "2026-06-26",
-  "total_lessons": 12,
+  "total_lessons": 4,
   "attended_lessons": 2,
-  "remaining_lessons": 10,
+  "remaining_lessons": 2,
   "attendance_record": [
     "2026-06-25",
     "2026-07-23"
