@@ -5,11 +5,12 @@
   "payment_date": "2026-06-26",
   "expiration_date": "2026-06-26",
   "total_lessons": 4,
-  "attended_lessons": 3,
-  "remaining_lessons": 1,
+  "attended_lessons": 4,
+  "remaining_lessons": 0,
   "attendance_record": [
     "2026-06-25",
     "2026-07-23",
-    "2026-07-30"
+    "2026-07-30",
+    "2026-08-06"
   ]
 }
