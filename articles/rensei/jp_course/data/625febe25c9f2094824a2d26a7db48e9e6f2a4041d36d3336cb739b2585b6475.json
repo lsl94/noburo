@@ -2,10 +2,10 @@
   "id": 5,
   "non_renewal": false,
   "quarterly_payment": false,
-  "payment_date": "2026-10-01",
-  "expiration_date": "2027-10-01",
+  "payment_date": "2026-11-06",
+  "expiration_date": "2027-11-12",
   "total_lessons": 4,
-  "attended_lessons": 4,
+  "attended_lessons": 0,
   "remaining_lessons": 0,
   "attendance_record": [
     "2026-10-01",
